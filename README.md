@@ -1,9 +1,18 @@
 # Inteli Social Android
 
-Aplicación Android demo de Inteli Social para gestionar borradores y publicaciones programadas de Instagram y LinkedIn desde el celular.
+App Android para centralizar Instagram y LinkedIn.
 
-## APK automática
+## Versión 0.2
+- Dashboard Instagram + LinkedIn
+- Pantalla de métricas
+- Compositor de publicaciones
+- Pantalla de conexión de cuentas
+- Botones preparados para OAuth
+- Arquitectura segura: credenciales/tokens en backend, nunca en APK
+- GitHub Actions genera automáticamente la APK debug
 
-Cada cambio en `main` ejecuta GitHub Actions y genera un APK debug instalable. El archivo se descarga desde **Actions → Build Android APK → Artifacts → Inteli-Social-APK**.
+## Estado
+La UI de gestión está implementada. La conexión real requiere configurar las aplicaciones de Meta/LinkedIn y desplegar el backend Inteli Social.
 
-> Modo demo: todavía no publica en cuentas reales. La integración OAuth/API oficial de Meta y LinkedIn se añade en la siguiente etapa.
+## APK
+Actions → Build Android APK → última ejecución → Artifacts → Inteli-Social-APK.
